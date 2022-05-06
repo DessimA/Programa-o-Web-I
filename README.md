@@ -16,4 +16,18 @@
 
 > br.com.ifce.view -> HTML, CSS and JS
 
+## Aula 03 Filmes
+
+> Fazer CRUD com JDBC
+
+> Cadastrar
+
+> Listar
+
+> Remover
+
+> Alterar
+
+> Buscar por ID
+
 
