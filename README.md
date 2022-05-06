@@ -4,6 +4,8 @@
 
 ## Aula 01 Exemplo Filmes
 
+> Introdução a Spring Boot e apresentação da ferramenta Spring Tool Suite.
+
 ## Aula 02 Livraria-MVC
 
 > br.com.ifce.controller -> É o cara que vai intermediar o serviço e view
