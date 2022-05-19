@@ -4,6 +4,8 @@
 
 ## Aula 01 Exemplo Filmes
 
+> Introdução a Spring Boot e apresentação da ferramenta Spring Tool Suite.
+
 ## Aula 02 Livraria-MVC
 
 > br.com.ifce.controller -> É o cara que vai intermediar o serviço e view
@@ -15,5 +17,19 @@
 > br.com.ifce.repository -> Banco de dados
 
 > br.com.ifce.view -> HTML, CSS and JS
+
+## Aula 03 Filmes
+### Trabalho para entrega em 13/05
+> Fazer CRUD com JDBC
+
+> Cadastrar
+
+> Listar
+
+> Remover
+
+> Alterar
+
+> Buscar por ID
 
 
