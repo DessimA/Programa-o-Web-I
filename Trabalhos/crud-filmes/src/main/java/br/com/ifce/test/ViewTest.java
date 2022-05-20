@@ -19,14 +19,16 @@ public class ViewTest {
 
         filmeRepo.addFilme(filme);
         
-        filme.setNome("Avengers");
+        filme.setNome("Missão impossivel");
         
         filmeRepo.updateFilme(filme);
         
         //filmeRepo.deleteFilme(1);
         
         filmeRepo.getAllFilmes();
-        filmeRepo.getFilme(1);
+        Filme filmeRetornado = filmeRepo.getFilme(1);
+
+        System.out.println(filmeRetornado.getNome());
 
     }       
 }
