@@ -3,7 +3,11 @@
 	<groupId>br.com.ifce</groupId>
 	<artifactId>crud-filmes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud-hibernate-web</name>
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+    <name>crud-hibernate-web</name>
 	<description>Projeto CRUD</description>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->

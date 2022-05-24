@@ -2,12 +2,12 @@ package br.com.ifce.service;
 
 import java.util.List;
 
-import br.com.ifce.model.Filme;
-import br.com.ifce.repository.FilmeRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import br.com.ifce.model.Filme;
+import br.com.ifce.repository.FilmeRepository;
 
 @Service
 @Transactional
@@ -16,19 +16,16 @@ public class FilmeServiceImpl implements FilmeService {
     @Autowired
     private FilmeRepository filmeRepository;
 
-    @Override
     @Transactional
     public void addFilme(Filme filme) {
     	filmeRepository.addFilme(filme);
     }
 
-    @Override
     @Transactional
     public List<Filme> getAllFilmes() {
 	return filmeRepository.getAllFilmes();
     }
 
-    @Override
     @Transactional
     public void deleteFilme(Integer filmeId) {
     	filmeRepository.deleteFilme(filmeId);

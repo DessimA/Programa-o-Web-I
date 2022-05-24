@@ -22,8 +22,8 @@ public class HibernateConfig {
 				Properties settings = new Properties();
 				settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
 				settings.put(Environment.URL, "jdbc:mysql://localhost:3306/filmes?useSSL=false");
-				settings.put(Environment.USER, "root");
-				settings.put(Environment.PASS, "");
+				settings.put(Environment.USER, "dessim");
+				settings.put(Environment.PASS, "admin");
 				settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
 
 				settings.put(Environment.SHOW_SQL, "true");
