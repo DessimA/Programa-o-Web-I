@@ -1,5 +1,7 @@
 package com.trabalho2.trabalho.service;
 
+import java.util.List;
+
 import com.trabalho2.trabalho.model.Livro;
 import com.trabalho2.trabalho.repository.LivroRepository;
 
@@ -13,5 +15,9 @@ public class LivroService {
     
     public void cadastrarLivro(Livro livro){
         livroRepo.save(livro);
+    }
+
+    public List<Livro> listarLivros() {
+        return livroRepo.findAll();
     }
 }
