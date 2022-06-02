@@ -1,0 +1,48 @@
+* { 
+    padding: 0;
+    margin: 0;
+  }
+  header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: Cambria, Arial;
+  }
+  section{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+  }
+  form{
+      font-family: Arial;             
+  }
+  div{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;  
+      border-radius: 35px;
+  }
+  form input, form textarea{
+      outline: unset;
+      padding: 20px;
+      min-width: 300px;
+      border: 1px solid black;
+      border-radius: 20px;
+  }
+  form input:focus, form textarea:focus{
+      background-color: floralwhite;
+  } 
+  form input[type=submit] {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      margin-left: 20px;
+  }
+  form label{
+      margin-left: 30px;
+      font-family: Arial;
+  }
