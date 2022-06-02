@@ -48,7 +48,7 @@ public class LivroController {
         public ModelAndView excluirLivroPorId(@PathVariable Long codigo){
             livroService.excluirLivroPorId(codigo);
 
-            ModelAndView mv = new ModelAndView("redirect:livro-listar");
+            ModelAndView mv = new ModelAndView("redirect:/livro/listar");
             
             return mv;
     }
