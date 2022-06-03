@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/listagem-heroi.css" />
+
+</head>
+
+<body>
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Personagem</th>
+                <th scope="col">Desenho</th>
+                <th scope="col">Gênero</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="heroi: ${listarHerois}">
+                <td th:text="${heroi.codigo}"></td>
+                <td th:text="${heroi.personagem}"></td>
+                <td th:text="${heroi.desenho}"></td>
+                <td th:text="${heroi.categoria}"></td>
+                <td> <a th:href="@{/heroi/excluir/{codigo}(codigo = ${heroi.codigo})}" class="btn btn-danger"> Excluir
+                    </a></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <div>
+        <form action="http://localhost:8080/heroi/formulario">
+            <a class="btn btn-primary" href="http://localhost:8080/heroi/formulario" role="button">Cadastrar</a>
+        </form>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

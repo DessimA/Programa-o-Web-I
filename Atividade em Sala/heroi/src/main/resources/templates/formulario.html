@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario.css" />
+
+</head>
+
+<body>
+    <header>
+        <h2>CADASTRO DE HEROIS</h2>
+    </header>
+    <section>
+        <form method="get" action="/heroi/salvar">
+
+            <div><label> Personagem:</label>
+                <input type="text" name="personagem" required />
+            </div>
+
+            <div><label> Desenho: </label>
+                <input type="text" name="desenho" required />
+            </div>
+
+            <div><label> Gênero: </label>
+                <input type="text" name="categoria" required />
+            </div>
+
+            <input type="submit" value="Cadastrar" />
+            <div>
+                <form action="http://localhost:8080/heroi/listar">
+                    <a class="btn btn-primary" href="http://localhost:8080/heroi/listar" role="button">Listar</a>
+                </form>
+            </div>
+        </form>
+    </section>
+    
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
