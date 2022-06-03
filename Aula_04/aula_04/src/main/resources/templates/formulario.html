@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Formulario</title>
-    <meta charset="UTF-8">  
-    <link rel="stylesheet" type="text/css" href="/css/formulario.css" />  
-    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario.css" />
+
 </head>
+
 <body>
-    <header><h1>Cadastro de livros</h1></header>
+    <header>
+        <h2>CADASTRO DE LIVROS</h2>
+    </header>
     <section>
         <form method="get" action="/livro/salvar">
-          
+
             <div><label> Titulo:</label>
-                 <input type="text" name="titulo" required/> 
-            </div>  
+                <input type="text" name="titulo" required />
+            </div>
 
-           <div><label> Autor: </label>
-                <input type="text" name="autor" required/> 
-           </div>
+            <div><label> Autor: </label>
+                <input type="text" name="autor" required />
+            </div>
 
-           <div><label> Categoria: </label>
-                <input type="text" name="categoria" required/> 
-           </div>
-            
-            <input type="submit" value="Cadastrar"/>
+            <div><label> Categoria: </label>
+                <input type="text" name="categoria" required />
+            </div>
+
+            <input type="submit" value="Cadastrar" />
+            <div>
+                <form action="http://localhost:8080/livro/listar">
+                    <a class="btn btn-primary" href="http://localhost:8080/livro/listar" role="button">Listar</a>
+                </form>
+            </div>
         </form>
     </section>
     
+    <script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>

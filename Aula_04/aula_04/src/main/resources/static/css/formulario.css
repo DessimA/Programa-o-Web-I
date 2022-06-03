@@ -2,36 +2,45 @@
     padding: 0;
     margin: 0;
   }
+  body{
+      background-color: black;
+      color: white;
+      align-content: center;
+  }
   header{
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 20px;
-      background-color: black;
-      color: white;
-      font-family: Cambria, Arial;
+      justify-content: center;      
+      background-color: rgb(0, 0, 0);
+      color: white;   
+      margin-top: 10px;   
   }
   section{
       display: flex;
       align-items: center;
       justify-content: center;
       height: 80vh;
-  }
-  form{
-      font-family: Arial;             
+      background-color: white;
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 10px;
+      border-radius: 5%;
+      color: black;
+      min-width: 300px;
+      min-height: 400px;
   }
   div{
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px;  
-      border-radius: 35px;
+      margin-bottom: 20px;      
   }
   form input, form textarea{
       outline: unset;
-      padding: 20px;
-      min-width: 300px;
+      padding: 10px;
+      min-width: 200px;
       border: 1px solid black;
-      border-radius: 20px;
+      border-radius: 5px;
   }
   form input:focus, form textarea:focus{
       background-color: floralwhite;
@@ -40,9 +49,6 @@
       background-color: black;
       color: white;
       cursor: pointer;
-      margin-left: 20px;
+      margin-bottom: 10px;
   }
-  form label{
-      margin-left: 30px;
-      font-family: Arial;
-  }
+  

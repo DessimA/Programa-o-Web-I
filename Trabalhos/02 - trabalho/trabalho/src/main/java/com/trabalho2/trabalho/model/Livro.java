@@ -47,7 +47,4 @@ public class Livro {
         this.categoria = categoria;
     }
 
-   
-
-    
 }

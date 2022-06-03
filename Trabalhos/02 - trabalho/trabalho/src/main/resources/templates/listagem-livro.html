@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Listagem</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 </head>
+
 <body>
 
     <table class="table">
@@ -17,17 +19,18 @@
             </tr>
         </thead>
         <tbody>
-          <tr th:each = "livro: ${listaLivros}">
-            <td th:text="${livro.codigo}"></td> 
-            <td th:text="${livro.titulo}"></td> 
-            <td th:text="${livro.autor}"></td> 
-            <td th:text="${livro.categoria}"></td>   
-          </tr>  
+            <tr th:each="livro: ${listaLivros}">
+                <td th:text="${livro.codigo}"></td>
+                <td th:text="${livro.titulo}"></td>
+                <td th:text="${livro.autor}"></td>
+                <td th:text="${livro.categoria}"></td>
+            </tr>
         </tbody>
 
 
     </table>
-    
-<script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
 </body>
+
 </html>
