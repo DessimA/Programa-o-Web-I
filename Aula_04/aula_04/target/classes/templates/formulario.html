@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario.css" />
+
+</head>
+
+<body>
+    <header>
+        <h2>CADASTRO DE LIVROS</h2>
+    </header>
+    <section>
+        <form method="POST" action="/livro/salvar" th:object="${livro}">
+
+            <input type="hidden" th:field="*{codigo}" /> 
+            <label>Título</label><br></label> <input type="text" th:field="*{titulo}"> <br> 
+            <label>Autor</label><br><input type="text" th:field="*{autor}"> <br> 
+            <label>Categoria</label><br><input type="text" th:field="*{categoria}"> <br><br>	
+		
+		<input type="submit" value="Cadastrar"><br>
+
+                <form action="http://localhost:8080/livro/listar">
+                    <a class="btn btn-primary" href="http://localhost:8080/livro/listar" role="button">Listar</a>
+                </form>
+            </div>
+        </form>
+    </section>
+    
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
