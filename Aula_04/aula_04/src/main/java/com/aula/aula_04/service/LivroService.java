@@ -1,6 +1,7 @@
 package com.aula.aula_04.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,5 +23,9 @@ public class LivroService {
     }
     public void excluirLivroPorId(Long codigo){
         livroRepo.deleteById(codigo);
+    }
+
+    public Optional<Livro> buscarPorId(Long codigo) {
+        return livroRepo.findById(codigo);
     }
 }

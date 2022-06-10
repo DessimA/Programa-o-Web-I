@@ -27,8 +27,8 @@
                 <td th:text="${livro.titulo}"></td>
                 <td th:text="${livro.autor}"></td>
                 <td th:text="${livro.categoria}"></td>
-                <td> <a th:href="@{/livro/excluir/{codigo}(codigo = ${livro.codigo})}" class="btn btn-danger"> Excluir
-                    </a></td>
+                <td> <a th:href="@{/livro/excluir/{codigo}(codigo = ${livro.codigo})}" class="btn btn-danger"> Excluir </a>
+                 <a class="btn btn-primary" th:href="@{/livro/atualizar/{codigo}(codigo = ${livro.codigo})}"> Atualizar </a></td>
             </tr>
         </tbody>
 

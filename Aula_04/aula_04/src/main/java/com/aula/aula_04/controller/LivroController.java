@@ -1,11 +1,13 @@
 package com.aula.aula_04.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.aula.aula_04.model.Livro;
@@ -27,7 +29,7 @@ public class LivroController {
         return "formulario";
     }
 
-    @GetMapping("/livro/salvar")
+    @RequestMapping("/livro/salvar")
     public String salvar(Livro livro){
         livroService.cadastrarLivro(livro);        
         return "sucesso";
@@ -52,5 +54,12 @@ public class LivroController {
             
             return mv;
     }
-    
+    @RequestMapping("/livro/atualizar/{codigo}")
+        public ModelAndView atualizarLivroPorId(@PathVariable Long codigo){
+            Optional<Livro> livro = livroService.buscarPorId(codigo);
+            ModelAndView mv = new ModelAndView("formulario");
+            mv.addObject("livro", livro);
+
+            return mv;           
+    }
 }
